@@ -67,13 +67,25 @@
             <a href="#about" class="btn-primary">Kenali Saya Lebih Jauh &darr;</a>
           </div>
         </div>
+
+        <!-- Animated Waves -->
+        <div class="animated-waves">
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(199, 238, 251, 0.4)" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(199, 238, 251, 0.6)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(199, 238, 251, 0.8)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--bg-color)" />
+            </g>
+          </svg>
+          <div class="water-fill"></div>
+        </div>
       </section>
 
-      <div class="wave-transition">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
-          <path fill="currentColor" fill-opacity="0.1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,42.7C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
-        </svg>
-      </div>
+
 
       <!-- Laut Dangkal (Shallow Water) - About & Skills -->
       <section class="depth-section shallow" id="about">
