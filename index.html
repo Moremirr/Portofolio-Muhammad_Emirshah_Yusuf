@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <title>Portofolio Laut Dalam</title>
+  </head>
+  <body>
+    <!-- Submarine Element (Fixed or Absolute depending on scroll) -->
+    <div id="submarine" class="submarine">
+      <svg width="80" height="60" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+        <path d="M70,30 L70,20 L80,20 L80,10 L60,10 L60,30 Z" fill="#F4D03F" />
+        <rect x="20" y="30" width="60" height="30" rx="15" fill="#F1C40F" />
+        <path d="M20,30 Q0,45 20,60 Z" fill="#E67E22" />
+        <circle cx="65" cy="45" r="8" fill="#3498DB" stroke="#2C3E50" stroke-width="2"/>
+        <circle cx="45" cy="45" r="8" fill="#3498DB" stroke="#2C3E50" stroke-width="2"/>
+        <!-- Propeller -->
+        <rect x="5" y="35" width="5" height="20" fill="#7F8C8D" />
+      </svg>
+    </div>
+
+    <!-- Bubbles Container -->
+    <div id="bubbles-container"></div>
+
+    <div class="scroll-container">
+      
+      <!-- Permukaan (Surface) -->
+      <section class="depth-section surface" id="home">
+        <div class="content organic-card">
+          <p class="greeting">Selamat Datang</p>
+          <h1 class="name">Karya & Kreativitas</h1>
+          <p class="tagline">Menyelami lautan imajinasi dan desain yang mengalir secara alami.</p>
+          <a href="#about" class="btn-dive">Mulai Menyelam &darr;</a>
+        </div>
+      </section>
+
+      <!-- Wave Separator 1 -->
+      <div class="wave-separator">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <!-- Laut Dangkal (Shallow Water) -->
+      <section class="depth-section shallow" id="about">
+        <div class="content organic-card">
+          <h2>Tentang Perjalanan Ini</h2>
+          <p>Saya percaya bahwa desain harus terasa hidup. Seperti arus air yang tidak pernah kaku, karya saya berfokus pada pengalaman visual yang lembut, intuitif, dan mengalir.</p>
+          <p>Pendekatan ini berfokus pada harmoni antara estetika alam dan interaksi modern.</p>
+        </div>
+        <!-- Ikan siluet ringan -->
+        <div class="fish fish1"></div>
+        <div class="fish fish2"></div>
+      </section>
+
+      <!-- Wave Separator 2 -->
+      <div class="wave-separator flip">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+      </div>
+
+      <!-- Zona Remang (Twilight Zone) -->
+      <section class="depth-section twilight" id="projects">
+        <div class="content organic-card">
+          <h2>Galeri Penemuan</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3>Simfoni Visual</h3>
+              <p>Eksplorasi warna dan bentuk dalam ruang digital.</p>
+            </div>
+            <div class="project-card">
+              <h3>Kanvas Biru</h3>
+              <p>Ruang pameran karya seni interaktif yang menenangkan.</p>
+            </div>
+            <div class="project-card">
+              <h3>Harmoni Gelombang</h3>
+              <p>Desain antarmuka yang mengutamakan kedamaian pengguna.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dasar Laut (Deep Ocean / Trench) -->
+      <section class="depth-section trench" id="contact">
+        <div class="content">
+          <h2>Hubungi Saya</h2>
+          <p>Tertarik untuk bekerja sama? Jangan ragu untuk menghubungi saya di dasar laut ini.</p>
+          <a href="mailto:hello@example.com" class="btn-contact">Kirim Pesan</a>
+        </div>
+        <div class="ocean-floor"></div>
+      </section>
+
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
