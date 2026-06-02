@@ -8,19 +8,19 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     
-    <title>Portofolio Laut Dalam</title>
+    <title>Portofolio - Muhammad Emirshah Yusuf</title>
   </head>
   <body>
-    <!-- Submarine Element (Fixed or Absolute depending on scroll) -->
+    <!-- Submarine Element -->
     <div id="submarine" class="submarine">
-      <svg width="80" height="60" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+      <svg width="60" height="45" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
         <path d="M70,30 L70,20 L80,20 L80,10 L60,10 L60,30 Z" fill="#F4D03F" />
         <rect x="20" y="30" width="60" height="30" rx="15" fill="#F1C40F" />
         <path d="M20,30 Q0,45 20,60 Z" fill="#E67E22" />
-        <circle cx="65" cy="45" r="8" fill="#3498DB" stroke="#2C3E50" stroke-width="2"/>
-        <circle cx="45" cy="45" r="8" fill="#3498DB" stroke="#2C3E50" stroke-width="2"/>
+        <circle cx="65" cy="45" r="8" fill="#a4e8f2" stroke="#2C3E50" stroke-width="2"/>
+        <circle cx="45" cy="45" r="8" fill="#a4e8f2" stroke="#2C3E50" stroke-width="2"/>
         <!-- Propeller -->
         <rect x="5" y="35" width="5" height="20" fill="#7F8C8D" />
       </svg>
@@ -33,67 +33,127 @@
       
       <!-- Permukaan (Surface) -->
       <section class="depth-section surface" id="home">
-        <div class="content organic-card">
-          <p class="greeting">Selamat Datang</p>
-          <h1 class="name">Karya & Kreativitas</h1>
-          <p class="tagline">Menyelami lautan imajinasi dan desain yang mengalir secara alami.</p>
-          <a href="#about" class="btn-dive">Mulai Menyelam &darr;</a>
+        <!-- Floating Boat SVG -->
+        <div class="boat">
+          <svg viewBox="0 0 100 80" width="120" height="96" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sail -->
+            <path d="M48,15 L48,50 L20,50 Z" fill="#ecf0f1" />
+            <path d="M52,15 L52,50 L80,50 Z" fill="#bdc3c7" />
+            <!-- Mast -->
+            <rect x="49" y="10" width="2" height="40" fill="#7f8c8d" />
+            <!-- Hull -->
+            <path d="M10,50 L90,50 L80,65 L20,65 Z" fill="#e74c3c" />
+            <path d="M20,65 L80,65 L70,75 L30,75 Z" fill="#c0392b" />
+          </svg>
+        </div>
+
+        <div class="content-wrapper hero-layout">
+          <div class="profile-photo">
+            <!-- Tempat Foto Anda (Ganti src dengan URL/Path foto Anda) -->
+            <img src="https://via.placeholder.com/200?text=Foto+Anda" alt="Profil Muhammad Emirshah Yusuf" />
+          </div>
+          <div class="hero-text">
+            <p class="greeting">Selamat Datang, saya</p>
+            <h1 class="name">Muhammad Emirshah Yusuf</h1>
+            <p class="tagline">Saya seorang profesional kreatif yang berfokus pada pengalaman digital dan solusi inovatif.</p>
+            <a href="#about" class="btn-primary">Kenali Saya Lebih Jauh &darr;</a>
+          </div>
         </div>
       </section>
 
-      <!-- Wave Separator 1 -->
-      <div class="wave-separator">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      <div class="wave-transition">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+          <path fill="currentColor" fill-opacity="0.1" d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,42.7C1120,32,1280,32,1360,32L1440,32L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
         </svg>
       </div>
 
-      <!-- Laut Dangkal (Shallow Water) -->
+      <!-- Laut Dangkal (Shallow Water) - About & Skills -->
       <section class="depth-section shallow" id="about">
-        <div class="content organic-card">
-          <h2>Tentang Perjalanan Ini</h2>
-          <p>Saya percaya bahwa desain harus terasa hidup. Seperti arus air yang tidak pernah kaku, karya saya berfokus pada pengalaman visual yang lembut, intuitif, dan mengalir.</p>
-          <p>Pendekatan ini berfokus pada harmoni antara estetika alam dan interaksi modern.</p>
+        <div class="content-wrapper split-layout">
+          <div class="text-block">
+            <h2>Tentang Saya</h2>
+            <p>Saya memiliki ketertarikan yang mendalam terhadap desain, teknologi, dan bagaimana keduanya dapat digabungkan untuk menciptakan sesuatu yang bermanfaat. Dengan latar belakang yang kuat dalam pengembangan antarmuka, saya selalu berusaha menghadirkan karya yang tidak hanya fungsional, tetapi juga memiliki nilai estetika tinggi.</p>
+            <p>Filosofi saya adalah kesederhanaan adalah kunci dari keanggunan sejati.</p>
+          </div>
+          <div class="skills-block">
+            <h3>Keahlian Utama</h3>
+            <ul class="skills-list">
+              <li>Desain Antarmuka (UI/UX)</li>
+              <li>Pengembangan Web Interaktif</li>
+              <li>Analisis & Pemecahan Masalah</li>
+              <li>Kolaborasi Tim & Komunikasi</li>
+              <li>Manajemen Proyek Kreatif</li>
+            </ul>
+          </div>
         </div>
-        <!-- Ikan siluet ringan -->
-        <div class="fish fish1"></div>
-        <div class="fish fish2"></div>
       </section>
 
-      <!-- Wave Separator 2 -->
-      <div class="wave-separator flip">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
-      </div>
-
-      <!-- Zona Remang (Twilight Zone) -->
-      <section class="depth-section twilight" id="projects">
-        <div class="content organic-card">
-          <h2>Galeri Penemuan</h2>
-          <div class="projects-grid">
-            <div class="project-card">
-              <h3>Simfoni Visual</h3>
-              <p>Eksplorasi warna dan bentuk dalam ruang digital.</p>
+      <!-- Zona Menengah (Mid Zone) - Experience -->
+      <section class="depth-section midzone" id="experience">
+        <div class="content-wrapper centered-layout">
+          <h2>Pengalaman & Pendidikan</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="year">2023 - Sekarang</div>
+              <h4>Desainer Web Independen</h4>
+              <p>Mengelola berbagai proyek pembuatan antarmuka pengguna untuk klien lokal dan internasional, berfokus pada kecepatan dan kenyamanan pengguna.</p>
             </div>
-            <div class="project-card">
-              <h3>Kanvas Biru</h3>
-              <p>Ruang pameran karya seni interaktif yang menenangkan.</p>
+            <div class="timeline-item">
+              <div class="year">2021 - 2023</div>
+              <h4>Spesialis Kreatif Digital</h4>
+              <p>Bertanggung jawab atas kualitas visual dan pengalaman interaktif pada berbagai kampanye digital di agensi kreatif.</p>
             </div>
-            <div class="project-card">
-              <h3>Harmoni Gelombang</h3>
-              <p>Desain antarmuka yang mengutamakan kedamaian pengguna.</p>
+            <div class="timeline-item">
+              <div class="year">2017 - 2021</div>
+              <h4>Pendidikan Sarjana</h4>
+              <p>Menyelesaikan studi dengan fokus pada teknologi informasi dan desain komunikasi visual.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Dasar Laut (Deep Ocean / Trench) -->
+      <!-- Zona Remang (Twilight Zone) - Projects -->
+      <section class="depth-section twilight" id="projects">
+        <div class="content-wrapper centered-layout">
+          <h2>Karya & Portofolio</h2>
+          <p class="subtitle">Beberapa proyek pilihan yang pernah saya kerjakan.</p>
+          <div class="projects-grid">
+            <div class="project-card organic">
+              <div class="project-image" style="background-color: #a4e8f2;"></div>
+              <h3>Simfoni Visual</h3>
+              <p>Platform galeri seni digital yang mengutamakan ruang putih dan kenyamanan mata pengunjung.</p>
+            </div>
+            <div class="project-card organic">
+              <div class="project-image" style="background-color: #fce4ec;"></div>
+              <h3>Harmoni Gelombang</h3>
+              <p>Desain aplikasi kesehatan mental yang menggunakan palet warna menenangkan dan navigasi mengalir.</p>
+            </div>
+            <div class="project-card organic">
+              <div class="project-image" style="background-color: #e8f5e9;"></div>
+              <h3>Kanvas Biru</h3>
+              <p>Website pameran interaktif untuk fotografer alam bawah laut internasional.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dasar Laut (Deep Ocean) - Contact -->
       <section class="depth-section trench" id="contact">
-        <div class="content">
-          <h2>Hubungi Saya</h2>
-          <p>Tertarik untuk bekerja sama? Jangan ragu untuk menghubungi saya di dasar laut ini.</p>
-          <a href="mailto:hello@example.com" class="btn-contact">Kirim Pesan</a>
+        <div class="content-wrapper split-layout">
+          <div class="text-block">
+            <h2>Mari Berkolaborasi</h2>
+            <p>Tertarik untuk bekerja sama, atau sekadar ingin berdiskusi santai tentang desain dan teknologi? Jangan ragu untuk mengirim pesan kepada saya.</p>
+            <p><strong>Email:</strong> emirshah@example.com</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/emirshah</p>
+          </div>
+          <div class="form-block">
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Pesan telah terkirim!');">
+              <input type="text" placeholder="Nama Lengkap" required />
+              <input type="email" placeholder="Alamat Email" required />
+              <textarea placeholder="Pesan Anda" rows="4" required></textarea>
+              <button type="submit" class="btn-primary">Kirim Pesan</button>
+            </form>
+          </div>
         </div>
         <div class="ocean-floor"></div>
       </section>
