@@ -1,5 +1,14 @@
 import './style.css';
 
+// ─── Fix: selalu mulai dari atas halaman saat refresh ───────────────────────
+// Matikan scroll restoration otomatis browser
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+// Paksa scroll ke paling atas sebelum apapun dirender
+window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+// ────────────────────────────────────────────────────────────────────────────
+
 // DOM Elements
 const submarine = document.getElementById('submarine');
 const root = document.documentElement;
