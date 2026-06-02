@@ -43,7 +43,6 @@
         <div class="content-wrapper hero-layout">
           <div class="profile-boat-group">
             <!-- Foto full-body tanpa background di atas perahu -->
-            <!-- Ganti src di bawah dengan path foto full-body Anda, contoh: src="/src/assets/profile-fullbody.png" -->
             <div class="fullbody-wrapper">
               <img
                 id="fullbody-photo"
@@ -53,17 +52,26 @@
                 onerror="this.src='https://placehold.co/180x380/transparent/2c3e50?text=📸+Foto+Full+Body&font=outfit'; this.style.opacity='0.5';"
               />
             </div>
-            <!-- Floating Boat SVG (diperbesar agar seukuran foto) -->
+            <!-- Floating Boat SVG dengan layar -->
             <div class="boat">
-              <svg viewBox="0 0 100 55" width="280" height="154" xmlns="http://www.w3.org/2000/svg">
-                <!-- Hull -->
-                <path d="M5,15 L95,15 L85,35 L15,35 Z" fill="#e74c3c" />
-                <path d="M15,35 L85,35 L78,48 L22,48 Z" fill="#c0392b" />
+              <svg viewBox="0 0 100 90" width="300" height="270" xmlns="http://www.w3.org/2000/svg">
+                <!-- Mast / Tiang -->
+                <rect x="49" y="5" width="2" height="50" fill="#7f8c8d" />
+                <!-- Sail / Layar kiri -->
+                <path d="M48,8 L48,50 L18,50 Z" fill="#ecf0f1" opacity="0.95"/>
+                <!-- Sail / Layar kanan -->
+                <path d="M51,8 L51,50 L82,50 Z" fill="#dfe6e9" opacity="0.9"/>
+                <!-- Flag di ujung tiang -->
+                <path d="M51,5 L62,10 L51,15 Z" fill="#e74c3c" />
+                <!-- Hull deck (atas) -->
+                <path d="M8,52 L92,52 L85,68 L15,68 Z" fill="#e74c3c" />
+                <!-- Hull bawah -->
+                <path d="M15,68 L85,68 L79,80 L21,80 Z" fill="#c0392b" />
                 <!-- Deck line -->
-                <line x1="5" y1="15" x2="95" y2="15" stroke="#922b21" stroke-width="1.5"/>
-                <!-- Window details -->
-                <rect x="35" y="20" width="8" height="6" rx="1" fill="#a4e8f2" opacity="0.7"/>
-                <rect x="57" y="20" width="8" height="6" rx="1" fill="#a4e8f2" opacity="0.7"/>
+                <line x1="8" y1="52" x2="92" y2="52" stroke="#922b21" stroke-width="1.5"/>
+                <!-- Window / jendela kecil -->
+                <rect x="36" y="57" width="9" height="6" rx="1.5" fill="#a4e8f2" opacity="0.8"/>
+                <rect x="55" y="57" width="9" height="6" rx="1.5" fill="#a4e8f2" opacity="0.8"/>
               </svg>
             </div>
           </div>
